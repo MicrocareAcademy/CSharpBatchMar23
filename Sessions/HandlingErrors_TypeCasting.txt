@@ -1,0 +1,71 @@
+﻿// Handling Errors 
+
+/*
+ 
+  Handling Errors
+  Casting 
+    Implicit Casting
+    Explicit Casting
+
+ */
+
+
+Console.WriteLine("Implicit Casting");
+Console.WriteLine("============================");
+
+int age = 40;
+Console.WriteLine("MyAge:" + age);
+
+double dAge = age;
+Console.WriteLine("Implicit Casting int to double :" + dAge);
+
+Console.WriteLine("============================");
+Console.WriteLine("Explicit Casting");
+
+double myPrice = 100.99;
+Console.WriteLine("my Price:" + myPrice);
+
+
+int priceWIthoutDecimal = (int)myPrice;
+Console.WriteLine("Explicit Casting Double to Int:" + priceWIthoutDecimal);
+
+Console.WriteLine("============================");
+Console.WriteLine("Working on Convert Class Methods");
+
+// convert int to string and then to double 
+Console.WriteLine("============================");
+Console.WriteLine("Casting from Int to String and then to Double");
+
+int num = 100;
+
+string numStr = Convert.ToString(num); // 100 -> "100"
+
+double numDb = Convert.ToDouble(numStr); // "100" --> 100.00
+
+
+// convert int to boolean (true / false)
+
+Console.WriteLine("============================");
+Console.WriteLine("Casting from Int to Boolean");
+
+int maleInt = -100;
+
+bool isMale = Convert.ToBoolean(maleInt);
+Console.WriteLine("Is Male:" + isMale);
+
+int femaleInt = 0;
+
+bool isFemale = Convert.ToBoolean(femaleInt);
+Console.WriteLine("Is Female:" + isFemale);
+
+
+
+
+
+
+
+
+
+
+
+

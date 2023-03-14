@@ -1,0 +1,70 @@
+﻿string academyInfo = "microcare academy";
+
+Console.WriteLine($"Upper Letters: { academyInfo.ToUpper() }");
+
+Console.WriteLine($"Lower Letters: { academyInfo.ToLower() }");
+
+// REPLACE 
+
+//string myPet = "Its a dog";
+
+//myPet = myPet.Replace("dog", "cat");
+
+//Console.WriteLine($"My Pet is {myPet}");
+
+
+//string myCourse = "its .Net";
+
+//myCourse = myCourse.Replace(".Net", "C#.Net");
+
+//Console.WriteLine($"My Course is: {myCourse}");
+
+
+//string name = "    Micro care   ";
+
+//string trimmedName = name.Trim();
+
+//Console.WriteLine($"my name is: {trimmedName}");
+
+
+//string replacedName = name.Replace(" ", "");
+
+//Console.WriteLine($"my name is: {replacedName}");
+
+
+//string codeStr = "  Coding is fun  ";
+
+//string combinationStr =
+//    codeStr.Trim() // Coding is fun
+//           .Replace("Coding", "C# Coding")  //C# Coding is fun
+//           .ToUpper(); //C# CODING IS FUN
+
+
+//Console.WriteLine($"Combinations: {combinationStr}");
+
+
+// CONTAINS 
+
+//string myHobby = "I like playing cricket";
+
+//bool isCricExist = myHobby.Contains("cricket");
+
+//Console.WriteLine($"Cric Exist: {isCricExist}");
+
+//bool isfootballExist = myHobby.Contains("football");
+
+//Console.WriteLine($"FootBall Exist: {isfootballExist}");
+
+
+// REMOVE 
+
+string letters = "ABCDEFGHIKJL";
+
+string strAfterRemove = letters.Remove(4,2);
+
+Console.WriteLine($"After Remove: {strAfterRemove}");
+
+
+
+
+

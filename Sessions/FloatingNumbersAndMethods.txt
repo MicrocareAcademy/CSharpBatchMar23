@@ -1,0 +1,84 @@
+﻿
+
+
+//int x = 0;
+
+//x = x + 1;
+
+//x++;  // instead of writing x = x+1, we can use x++
+
+
+// Post Increment Operator 
+
+Console.WriteLine("POST INCREMENT =========");
+
+int y = 5;
+
+int z = y++;  
+
+Console.WriteLine("Y:" + y);
+
+Console.WriteLine("Z:" + z);
+
+Console.WriteLine("PRE INCREMENT =========");
+// Pre Increment OPerator
+
+int a = 10;
+
+int b = ++a;
+
+Console.WriteLine("A:" + a);
+
+Console.WriteLine("B:" + b);
+
+
+a--; // a = a - 1;
+
+// Math.Floor (negative)
+
+Math.Floor(100.333);   // 100
+Math.Floor(-9.9);
+
+// Math.Ceiling
+
+Math.Ceiling(101.33);  // 102
+
+
+// Math.ROund 
+
+//Math.Round(102.33); // 102 
+
+//Math.Round(103.55); // 104 
+
+Console.WriteLine(Math.Round(999.999, 3));  // 999.99
+
+Math.Truncate(888.88);  //888
+
+Console.WriteLine(Math.Floor(-1.2));
+Console.WriteLine(Math.Ceiling(-1.5));
+
+Console.WriteLine(Math.Truncate(-1.2));
+Console.WriteLine(Math.Truncate(-1.5));
+
+Console.WriteLine("FLOAT / DOUBLE / DECIMAL");
+
+
+float fx = 10.50f;
+
+float flt = 1f / 3;
+Console.WriteLine("float:" + flt);
+
+double dbl = 1d / 3;
+Console.WriteLine("double:" + dbl);
+
+decimal dcm = 1m / 3;
+Console.WriteLine("decimal:" + dcm);
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+﻿
+
+char ch = 'a';
+
+//string withoutSlash = "Teacher said, "Hello!" ";
+
+string withSlash = "Teacher said, \"Hello!\"";
+
+Console.WriteLine(withSlash);
+// INDEX
+// index of character(number) inside string which 2 
+
+
+string newLine = "Student walked \nto the park.";
+Console.WriteLine(newLine);
+
+
+string fname = "Virat";
+
+string lname = "Kohli";
+
+string fullname =  "My Name is: \\\\" + fname +" "+ lname;
+
+Console.WriteLine(fullname);
+
+
+Console.WriteLine(Math.Round(122.255, 1));
+

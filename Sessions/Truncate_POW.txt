@@ -1,0 +1,7 @@
+﻿double x = 3.14959;
+
+double factor = Math.Pow(10, 2);
+
+double roundedValue = Math.Truncate(x * factor) / factor;
+
+Console.WriteLine(roundedValue);

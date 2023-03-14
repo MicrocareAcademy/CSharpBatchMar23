@@ -1,0 +1,55 @@
+﻿
+//double debit = 600; // sold this to customer
+
+//double credit = 500; // customer paid 
+
+//double balance = credit - debit;
+
+//// Math.Abs()
+//Console.WriteLine("My Original Balance:" + balance);
+
+//Console.WriteLine("My ABS Balance:"+ Math.Abs(balance));
+
+//// Math.Sqrt
+
+//Console.WriteLine("My Sqrt Value:" + Math.Sqrt(100));
+
+//Console.WriteLine("Min Value(100 & 500):" + Math.Min(100, 500));
+
+//Console.WriteLine("Max Value(100 & 500):" + Math.Max(100, 500));
+
+//// Math.Floor
+//// Math.Ceiling
+//// Math.Round
+
+Console.WriteLine("=========== MATH.FLOOR ==========");
+Console.WriteLine("100.50 = "+ Math.Floor(100.50));
+Console.WriteLine("999.99 = "+ Math.Floor(999.99));
+
+
+Console.WriteLine("=========== MATH.CEILING ==========");
+Console.WriteLine("100.50 = " + Math.Ceiling(100.50));
+Console.WriteLine("999.99 = " + Math.Ceiling(999.99));
+Console.WriteLine("555.55 = " + Math.Ceiling(555.55));
+
+Console.WriteLine("=========== MATH.Rounding without decimals ==========");
+Console.WriteLine("100.22 = " + Math.Round(100.22)); //Math.FLoor
+Console.WriteLine("100.66 = " + Math.Round(100.66)); //Math.Ceiling
+Console.WriteLine("100.50 = " + Math.Round(100.50)); //Math.Ceiling
+
+Console.WriteLine("=========== MATH.Rounding with 1 decimal ==========");
+Console.WriteLine("100.22 = " + Math.Round(100.22,1)); 
+Console.WriteLine("100.66 = " + Math.Round(100.66,1)); 
+Console.WriteLine("100.50 = " + Math.Round(100.50,1));
+
+Console.WriteLine("=========== MATH.Rounding with 2 decimal ==========");
+Console.WriteLine("100.7752 = " + Math.Round(100.7752, 2));
+Console.WriteLine("100.009 = " + Math.Round(100.009, 2));
+Console.WriteLine("100.555 = " + Math.Round(100.555, 2));
+
+// Math.Rounding , scenarios for Truncate
+
+
+string floatingstr = "1000.2000";
+
+float floatNum = Convert.ToSingle(floatingstr);

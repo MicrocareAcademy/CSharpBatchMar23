@@ -1,0 +1,33 @@
+﻿
+double balance = 0;
+Console.WriteLine("My Initial Balance:" + balance);
+
+
+// my salary credited 1000
+balance = balance + 1000;
+Console.WriteLine("Salary Credited, Balance:" + balance);
+
+// i eat biryani and i paid 500
+balance = balance - 500;
+Console.WriteLine("Paid to Hotel, Balance:" + balance);
+
+//paid loans 500
+balance = balance - 500;
+Console.WriteLine("EMI Payment, Balance:" + balance);
+
+
+char ch;
+ch = 'a';
+
+string nam3 = ""; // Empty string
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+﻿
+// STRING INTERPOLATION 
+
+//string sName = "Hammad";
+//int age = 25;
+//string city = "Hyderabad";
+//string country = "India";
+//string myCompany = "Microcare";
+
+//string myDetails = $"My name is {sName}, my age is {age}, i am from {city} - {country}, working in {myCompany}";
+
+//Console.WriteLine(myDetails);
+
+
+// LENGTH 
+
+
+//string academy = "Microcare";
+
+//int strLen = academy.Length;
+
+//Console.WriteLine($"Length of string is {strLen}");
+
+
+
+//Console.WriteLine("Enter Your Name:");
+//string yourName = Console.ReadLine();
+
+//Console.WriteLine("Enter Your Age:");
+//int age = Convert.ToInt32(Console.ReadLine());
+
+//Console.WriteLine("Which company you are working:");
+//string corp = Console.ReadLine();
+
+
+//Console.WriteLine($"your name is {yourName}, you are {age} years old and you are working in the company {corp}");
+
+
+
+//string name = "MiCroCare Academy";
+//int indexOfE = name.IndexOf("Cro");
+
+//Console.WriteLine($"My string is {name} and Index Of small Cro is: {indexOfE}");
+
+
+Console.WriteLine("Enter your string:");
+
+string name = Console.ReadLine();
+
+Console.WriteLine("Enter the character from where to start:");
+string chr = Console.ReadLine();
+
+int indexOfChar = name.IndexOf(chr);
+
+string subStr = name.Substring(indexOfChar);
+
+Console.WriteLine($"My Original String: {name} and its of length {name.Length}, after grabing {subStr}");
+

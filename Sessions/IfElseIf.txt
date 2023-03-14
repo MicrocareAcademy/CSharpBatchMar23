@@ -1,0 +1,82 @@
+﻿
+int x = 9, y = 0, z = 30;
+
+// (x >= 10 && y <= 10) || z > 50
+
+// x >= 10 - TRUE
+// y <= 10 - TRUE
+
+
+// IF STATEMENT  & IF ELSE 
+
+int age = Convert.ToInt32(Console.ReadLine());
+
+if (age >= 18)
+{
+    Console.WriteLine("Person is eligible for Driving");
+}
+else
+{
+    Console.WriteLine("Person is not eligible for Driving");
+}
+
+double ticketCost = 1000;
+double price = 0;
+
+if (age >= 0 && age <= 2)
+{
+    price = ticketCost - (ticketCost * 80/100);
+}
+else if (age > 2 && age <= 5)
+{
+    price = ticketCost -  (ticketCost * 50/100);
+}
+else if (age > 5 && age <= 18)
+{
+    price = ticketCost - (ticketCost * 20/100);
+}
+else if (age > 19 && age <= 40)
+{
+    
+}
+else if(age > 40 && age <= 100)
+{
+    price = 0;
+}
+else
+{
+    Console.WriteLine("COngrats for century..");
+}
+
+Console.WriteLine($"Ticket Cost Of Person with age: {age}, ticket: {price}");
+
+
+
+double balance = 0;
+Console.WriteLine("My Initial Balance:" + balance);
+
+
+// my salary credited 1000
+balance = balance + 1000;
+Console.WriteLine("Salary Credited, Balance:" + balance);
+
+// i eat biryani and i paid 500
+balance = balance - 500;
+Console.WriteLine("Paid to Hotel 500, Balance:" + balance);
+
+//paid loans 500
+balance = balance - 1000;
+Console.WriteLine("EMI Payment 1000, Balance:" + balance);
+
+string balanceTxt = string.Empty;
+if(balance < 0)
+{
+    balanceTxt = "Debit";
+    balance = Math.Abs(balance);
+}
+else
+{
+    balanceTxt = "Credit";
+}
+
+Console.WriteLine($"Balance :{balance} {balanceTxt}");
