@@ -1,0 +1,95 @@
+﻿
+//int[] ages = {10,20,30,40,50,1231,123,123,123,123 };
+
+//Console.WriteLine($"ages array length: {ages.Length}");
+
+
+//string[] names = new string[4] { "Sajjad", "Khan","Srikant",""};
+
+//string firstName = names[0];
+//string lastName = names[2]; //Bracket Notation
+
+//Console.WriteLine($"Full name: {firstName +" "+ lastName}");
+
+
+//names[3] = "Microcare"; // updating the value in the position(index) = 3
+
+//Console.WriteLine($"My Academy Name : {names[3]}");
+
+//int[] ages = { 10, 20, 30, 40, 50, 1231, 123, 123, 123, 123 };
+//string[] names = new string[4] { "Sajjad", "Khan", "Srikant", "" };
+//int[] intArray = new int[5];
+
+//Console.WriteLine("We are testing arrayes");
+
+//int[] ages = new int[2];
+
+////int lastIndexOfArr = ages.Length; // last index
+
+//for(int ageIndex = 0; ageIndex < ages.Length; ageIndex++)
+//{
+//    int age = ages[ageIndex];
+
+//    Console.WriteLine($"Age {ageIndex} : {age}");
+//}
+
+//int[] ages = new int[3] { 50, 60,70 };
+
+//int ageIndex = 0;
+//while(ageIndex < ages.Length)
+//{
+//    Console.WriteLine($"Age {ageIndex} : {ages[ageIndex]}");
+
+//    ageIndex++;
+//}
+
+
+//int[] ages = new int[3] { 70, 60, 100 };
+
+//Array.Sort(ages);
+
+//int ageIndex = 0;
+//while (ageIndex < ages.Length)
+//{
+//    Console.WriteLine($"Age {ageIndex} : {ages[ageIndex]}");
+
+//    ageIndex++;
+//}
+
+
+//string[] names = new string[4] { "Sajjad", "Khan", "Akram", "Phani" };
+
+//Array.Reverse(names);
+
+//int nameIndex = 0;
+//while (nameIndex < names.Length)
+//{
+//    Console.WriteLine($"Names {nameIndex} : {names[nameIndex]}");
+
+//    nameIndex++;
+//}
+
+//int[] ages = { 30, 60, 40, 10, 60, 80 };
+
+//int indexOfMyValue = Array.IndexOf(ages, 100);
+
+//if(indexOfMyValue >= 0)
+//{
+//    Console.WriteLine("Value exist");
+//}
+//else
+//{
+//    Console.WriteLine("Value Doesn't exist");
+//}
+
+
+string[] names = null;
+
+int nameIndex = 0;
+while (nameIndex < names.Length)
+{
+    Console.WriteLine($"Names {nameIndex} : {names[nameIndex]}");
+
+    nameIndex++;
+}
+

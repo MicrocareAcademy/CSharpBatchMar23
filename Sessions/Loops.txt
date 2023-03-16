@@ -1,0 +1,34 @@
+﻿//int i = 0;
+
+//do
+//{
+//    i++;
+
+//    Console.WriteLine($"Numbers:{i}");
+//} while (i < 5);
+
+//int i = 1, n = 5, product;
+//do
+//{
+//    product = n * i;
+//    Console.WriteLine($"{n} * {i} = {product}");
+//    i++;
+//} while (i <= 10);
+
+
+
+int[] ages = { 30, 30, 60 };
+
+string[] cheeses = { "cheddar_1998", "Mozirella_2022", "Fetta" };
+
+for(int i = 0; i < ages.Length; i++)
+{
+    if(i == 1)
+    {
+        ages[i] = 50;
+    }
+
+    Console.WriteLine($"Age {i} : {ages[i]}");
+}
+
+
