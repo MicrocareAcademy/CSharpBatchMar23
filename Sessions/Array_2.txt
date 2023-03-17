@@ -1,0 +1,51 @@
+﻿
+// 10, 20 ,30
+
+// 10, 20 ,30, 40
+
+int[] ageOldArr = { 10, 20, 30 }; // declaring and assinging values to array
+
+Console.WriteLine("My Array: { 10, 20, 30 }");
+
+for(int arrIndex = 0; arrIndex <= ageOldArr.Length - 1; arrIndex++)
+{
+    int age = ageOldArr[arrIndex];
+
+    Console.WriteLine($"Age {arrIndex} : {age}");
+}
+
+//i want to modify every value by adding +20
+
+for (int arrIndex = 0; arrIndex <= ageOldArr.Length - 1; arrIndex++)
+{
+    // first get the value(by accesing using bracket notation)
+    // and store it inside some varaible 
+    // second, add +20 
+
+    // re asisgn the new value to the same index position
+
+
+    int age = ageOldArr[arrIndex];
+    age = age + 20;
+
+    ageOldArr[arrIndex] = age;
+
+}
+
+
+//Copy data of one array into other array
+int[] agesNewArr = new int[4]; // array is of length 4 and all the values will be zero
+for(int x = 0; x <= ageOldArr.Length - 1; x++)
+{
+    int age = ageOldArr[x];
+
+    agesNewArr[x] = age;
+}
+
+
+for (int arrIndex = 0; arrIndex <= agesNewArr.Length - 1; arrIndex++)
+{
+    int age = agesNewArr[arrIndex];
+
+    Console.WriteLine($"New Age {arrIndex} : {age}");
+}
