@@ -1,0 +1,78 @@
+﻿
+
+//using System.Collections;
+
+//int age =100;
+
+//string name = "SAK";
+
+//bool isActive = true;
+
+//double price = 100.500;
+
+//char ch = 'A';
+
+
+//var age1 = 100.00;
+
+//var name1 = "sajjad";
+
+//var price1 = 1520.22;
+
+
+
+//var i = 100;
+
+//Console.WriteLine($"i value: {i}, type: {i.GetType()}");
+
+//var j = "Welcome to Microcare Academy";
+//Console.WriteLine($"j value: {j}, type: {j.GetType()}");
+
+//var k = true;
+//Console.WriteLine($"k value: {k}, type: {k.GetType()}");
+
+//var l = 20.50;
+//Console.WriteLine($"l value: {l}, type: {l.GetType()}");
+//Console.ReadLine();
+
+
+//var names = new string[5] { "SACHIN", "Kohli", "Ronaldo", "Messi", "James" };
+
+//foreach (var name2 in names)
+//{
+//    Console.WriteLine(name2);
+//}
+
+//for(var nameIndex = 0;  nameIndex < names.Length; nameIndex++)
+//{
+
+//}
+
+//int z, x;
+
+//var y = 10;
+
+
+//// VAR keyword Restrictions 
+
+//var aa = null;
+//var bb;
+//var x1 = 10, y1 = 20, z = 30;
+
+
+
+using System.Collections;
+
+var courses = new ArrayList() { "C#", 1, "SQL" };
+
+for (int i = 0; i < courses.Count; i++)
+{
+    string course = (string)courses[i];
+
+}
+
+foreach (var course in courses)
+{
+   
+}
+

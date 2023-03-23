@@ -1,0 +1,81 @@
+﻿
+
+
+using System.Collections;
+
+//int[] ageIds = new int[5];
+//ArrayList names = new ArrayList();
+
+//names.Add("MICROCARE");
+
+//names.Add(1);
+
+//names.Add(1000.00);
+//names.Add(1000.00);
+
+//names.Add(true);
+
+//names.Add(true);
+
+//names.Add(null);
+
+//names.Add("Academy");
+
+//names.Remove("Academy");
+
+
+//int[] userIds = { 1, 2, 3, 4, 5, 6 };
+
+//ArrayList arrData = new ArrayList()
+//{
+//    "Hammad","Srikant","Basit","Sreenivasulu", 100, 200.9999,true
+//};
+
+
+//string student3 = Convert.ToString(arrData[3]);
+
+////int price = Convert.ToInt32(arrData[0]);  // it will throw an error
+
+
+//ArrayList arlist = new ArrayList() { "Bill", "Bill", 300, 4.5F };
+
+//arlist.Remove("Bill"); // Bill, 300, 4.5F
+
+//arlist.RemoveAt(2);
+
+
+ArrayList courses = new ArrayList() { "C#", "Python", "Sql", "Java", "DotNet" };
+
+bool isDotNetExist = courses.Contains("DotNet");
+
+Console.WriteLine($"Is Dotnet Exist: {isDotNetExist}");
+
+
+courses.Sort(); // C#, DotNet, Java , Python, SQL
+
+Console.WriteLine("=====Sorting =======");
+for(int i = 0; i< courses.Count;i++)
+{
+    Console.Write(courses[i]+",");
+}
+
+courses.Reverse();  //  SQL, Python, java, donet, c#
+
+Console.WriteLine("=====Reversing =======");
+for (int i = 0; i < courses.Count; i++)
+{
+    Console.Write(courses[i] + ",");
+}
+
+
+courses.Clear(); // this will clear all elements inside an arraylist
+
+//Console.ReadLine();
+
+
+string myStr = "Microcare";
+
+for(int i=0; i < myStr.Length; i++)
+{
+    Console.WriteLine(myStr[i]);
+}

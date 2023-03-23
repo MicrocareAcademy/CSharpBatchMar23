@@ -1,55 +1,36 @@
-﻿// String.Join() / String.Split()
+﻿
+var names = new List<string>() { "MICROCAR", "EALLIANCE", "DZEN","Accenture","Cisco","Delliote" };
 
-//string[] names = {"Microcare","Academy"};
+// Adding data
+names.Add("INUBE");
+names.Add("Terrlogic");
 
-//string fullName = string.Join("--", names);
+// inserting data to specific position
+names.Insert(1, "Infosys");
 
-//Console.WriteLine($"Full Name : {fullName}");
+// removing data
+names.Remove("INUBE");
 
-
-//string[] userIds = { "1", "2", "3", "4" };
-
-//string userIdsStr = string.Join(",", userIds);
-
-//Console.WriteLine($"User Ids : {userIdsStr}");
-
-
-//// Creating a string array
-//string[] courses = { "C#", "Java", "C++", "Swift", "Go" };
-
-//// joins 2 strings from index 1
-//string s1 = String.Join("-", courses, 0, 2);
-
-//Console.WriteLine(s1);
-
-//Console.ReadLine();
+// remove data from specific position
+names.RemoveAt(1);
 
 
+// modify the data(replace)
+names[0] = "MICROCARE Academy";
 
-//string userIdsStr = "1,2,3,4,5";
+// sorting the data inside collection
+names.Sort();
 
-// userIdsArr = {1,2,3,4,5};
+List<string> corpNames = new List<string>();
 
-
-string[] courseDetails = { "C#"," ", "is","a","fun","programming","language"};
-
-string courseText = String.Join(" ", courseDetails);
-
-string[] backToNormalCourse = courseText.Split(' ', 4, StringSplitOptions.RemoveEmptyEntries);
-
-for(int i = 0; i < backToNormalCourse.Length; i++)
+foreach (var name in names)
 {
-    Console.WriteLine(backToNormalCourse[i]);
+    corpNames.Add(name);
 }
 
-//Console.ReadLine();
 
 
-string micStr = "1,2,3,4,&,6";
-string[] mySeperators = { ",", "&" };
 
-string[] myTextArr = micStr.Split(mySeperators,StringSplitOptions.RemoveEmptyEntries);
-
-Console.ReadLine();
+List<string> copyList = names;
 
 

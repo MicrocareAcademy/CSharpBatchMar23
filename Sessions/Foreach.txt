@@ -1,0 +1,52 @@
+﻿
+
+
+using CSharpBatchMar23.Persons;
+
+string[] names = { "SACHIN", "Kohli", "Ronaldo", "Messi", "James" };
+
+foreach(string name in names)
+{
+    //body
+
+    Console.WriteLine($"{name}");
+
+}
+
+char[] genders = { 'm', 'f', 'm', 'm', 'm', 'f', 'f', 'm', 'm', 'f' };
+
+int maleCOunt = 0, femaleCOunt = 0;
+
+foreach(char gender in genders)
+{
+    if(gender == 'm')
+    {
+        maleCOunt++;
+    }
+
+    if(gender == 'f')
+    {
+        femaleCOunt++;
+    }
+}
+
+
+Console.WriteLine($"Total Male :{maleCOunt}, Total Female: {femaleCOunt}");
+
+
+
+
+IList<Person> persons = new List<Person>();
+
+persons.Add(new Person { Name = "Sajjad", PersonID = 1, IsActive = true });
+persons.Add(new Person { Name = "HAMMAD", PersonID = 2, IsActive = true });
+persons.Add(new Person { Name = "Praveen", PersonID = 3, IsActive = true });
+
+
+
+foreach(Person person in persons)
+{
+    Console.WriteLine($"Name: {person.Name}, PersonID: {person.PersonID}, IsActive: {person.IsActive}");
+}
+
+
