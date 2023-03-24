@@ -1,0 +1,48 @@
+﻿var cities = new Dictionary<string, string>(){
+    {"UK", "London, Manchester, Birmingham"},
+    {"USA", "Chicago, New York, Washington"},
+    {"India", "Mumbai, New Delhi, Pune"},
+    {"Australia","Sydney,Melbourne,Hobart" }
+};
+
+//if(cities.ContainsKey("France") == false)
+//{
+
+//}
+
+if (!cities.ContainsKey("France"))
+{
+    // if france key not exist, then this block of code will eexcute
+
+    cities.Add("France", "Paris");
+}
+
+if (!cities.ContainsKey("India"))
+{
+    // if france key not exist, then this block of code will eexcute
+
+    cities.Add("India", "Mumbai, New Delhi, Pune");
+}
+
+Console.WriteLine($"France cities {cities["France"]}");
+
+
+var domains = new Dictionary<string, string>
+{
+    {"sk", "Slovakia"},
+    {"ru", "Russia"},
+    {"de", "Germany"},
+    {"no", "Norway"},
+    {"in", "India"}
+};
+
+
+foreach (var domainKey in domains.Keys) //{sk,ru,de,no,in}
+{
+    Console.WriteLine($"{domainKey}");
+}
+
+foreach (var domainValue in domains.Values) //{Slovakia,Russia,Germany,Norway,India}
+{
+    Console.WriteLine($"{domainValue}");
+}

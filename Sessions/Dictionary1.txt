@@ -1,0 +1,78 @@
+﻿
+List<int> ages = new List<int>() { 1, 2, 3 };
+ages.Add(100);
+
+Dictionary<int, string> dicCricketers = new Dictionary<int, string>();
+
+dicCricketers.Add(1, "Sachin");
+dicCricketers.Add(2, "Pointing");
+dicCricketers.Add(3, "Afridi");
+
+dicCricketers.Add(4, null);
+dicCricketers.Add(5, "");
+
+
+Dictionary<int, string> dicFootballers = new Dictionary<int, string>()
+{
+    {1,"Ronaldo" },
+    {2,"Messi" },
+    {3,"Zidane" },
+    {4,"Beckham" },
+};
+
+dicFootballers.Add(5, "Kaka");
+
+Console.WriteLine("========= Football Players =======");
+Console.WriteLine($"Total No Of Players: {dicFootballers.Count}");
+
+foreach (KeyValuePair<int, string> name in dicFootballers)
+{
+    Console.WriteLine($"Key: {name.Key}, Value: {name.Value}");
+}
+
+
+Console.WriteLine("========= Cricket Players =======");
+Console.WriteLine($"Total No Of Players: {dicCricketers.Count}");
+foreach (var name in dicCricketers)
+{
+    Console.WriteLine($"Key: {name.Key}, Value: {name.Value}");
+}
+
+Console.WriteLine("========= Using For Loop =======");
+for (int i = 0; i< dicFootballers.Count; i++)
+{
+    KeyValuePair<int, string> name = dicFootballers.ElementAt(i);
+
+    Console.WriteLine($"Key: {name.Key}, Value: {name.Value}");
+}
+
+
+var cities = new Dictionary<string, string>(){
+    {"UK", "London, Manchester, Birmingham"},
+    {"USA", "Chicago, New York, Washington"},
+    {"India", "Mumbai, New Delhi, Pune"},
+    {"Australia","Sydney,Melbourne,Hobart" }
+};
+
+Console.WriteLine(cities["UK"]); //prints value of UK key
+Console.WriteLine(cities["Australia"]);//prints value of Australia key
+
+
+for (int i = 0; i < cities.Count; i++)
+{
+    KeyValuePair<string,string> country = cities.ElementAt(i);
+
+    Console.WriteLine($"Key:{country.Key}, Value: {country.Value}");
+}
+
+Console.WriteLine("Updating cities of Australia to Sydney,Melbourne");
+cities["Australia"] = "Sydney,Melbourne";
+
+Console.WriteLine("Cities After Updatating");
+
+for (int i = 0; i < cities.Count; i++)
+{
+    KeyValuePair<string, string> country = cities.ElementAt(i);
+
+    Console.WriteLine($"Key:{country.Key}, Value: {country.Value}");
+}
