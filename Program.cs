@@ -1,99 +1,38 @@
 ﻿
 
-// Return Type | Method Name | Parameters(optional)
-
-
 using CSharpBatchMar23;
 
-void display()
-{
-    // my block of method, where i can write statements 
-}
+Student student1 = new Student(); // creating an object of class Student
+student1.FirstName = "Sajjad";
+student1.LastName = "Khan";
+student1.Age = 34;
+student1.IdentityNo = "12301230123012301";
 
-int sum(int num1, int num2)
-{
-    var addition = num1 + num2;
-
-    return addition;
-}
-bool isValid()
-{
-    return false;
-}
-
-int SumOfNumbers(List<int> numbers)
-{
-    var sum = 0;
-
-    foreach(var num in numbers)
-    {
-        sum = sum + num;
-    }
-
-    return sum;
-}
-
-var addResult = sum(100,200);
-Console.WriteLine($"Summation Of numbers: {addResult}");
-
-List<int> numList = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-var sumOfNumList = SumOfNumbers(numList);
-var sumOfNumList2 = SumOfNumbers(numList);
-var sumOfNumList3 = SumOfNumbers(numList);
+Console.WriteLine($"Name: {student1.FullName()}, Age: {student1.Age}, IdentityNo: {student1.IdentityNo}");
 
 
-int add1 = MyCalculator.Add(10,20,30);
-int sum1 = MyCalculator.Sub(30, 20);
-int mulply1 = MyCalculator.multiply(10, 50);
+Student student2 = new Student();
+student2.FirstName = "Srikant";
+student2.LastName = "Reddy";
+student2.Age = 25;
+student2.IdentityNo = "231-123-123-13";
+
+Console.WriteLine($"Name: {student2.FullName()}, Age: {student2.Age}, IdentityNo: {student2.IdentityNo}");
 
 
+Car c1 = new Car();
+c1.Model = "Mercedes C9";
+c1.Year = 2022;
+c1.Company = "Mercedes";
+c1.IsAutomatic = true;
+c1.Fuel = 100;
 
-// Burger
-/*
- 
- Things needed to prepare burger 
+c1.DisplayFuel();
 
- 1. Prepare Breads
- 2. Prepare Salads
- 3. Prepare Patty
- 4. Prepare Cheese Slice
+c1.DisplayKmsTravelled(20);
 
+c1.DecreaseFuel(30);
 
-Double Patty Burger
-Add Breads
-Add Salad
-Add Patty
-Add Cheese
-Add Patty
-Add Cheese
+c1.IncreaseFuel(20);
 
-
-Double Patty with Extra Cheese Burger
-Add Breads
-Add Salad
-Add Patty
-Add Cheese
-Add Patty
-Add Cheese
-Add Cheese
-Add Cheese
-
- */
-
-Console.WriteLine("====Preparing Veg Burger ====");
-Burger.PrepareBreads();
-Burger.PrepareSalad();
-Burger.PrepareVegPatty();
-Burger.PrepareCheeseSlice();
-
-
-Console.WriteLine("====Preparing Chicken Burger extra cheese ====");
-
-Burger.PrepareBreads();
-Burger.PrepareSalad();
-Burger.PrepareChickePatty();
-Burger.PrepareCheeseSlice();
-Burger.PrepareCheeseSlice();
-Burger.PrepareCheeseSlice();
-
+c1.DisplayFuel();
