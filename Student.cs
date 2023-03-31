@@ -8,6 +8,8 @@ namespace CSharpBatchMar23
 {
     public class Student
     {
+        #region ### Fields ###
+
         private string firstName; // FIELD
 
         // ANother way of settings and getting data from field using methods
@@ -59,14 +61,52 @@ namespace CSharpBatchMar23
             }
         }
 
-        public DateTime DOB;
+        public DateTime DOB { get; set; }
 
-        public string IdentityNo;
-
-
+        public string IdentityNo { get; private set; } // automatic property
+        
+        public void SetIdentityNo(string no)
+        {
+            IdentityNo = no;
+        }
         public string FullName()
         {
             return FirstName +" "+ LastName;
         }
+
+        #endregion
+
+        #region ### Constructors ###
+
+        public Student() // parameterless constructor
+        {
+            Console.WriteLine("An Object of the class Student was created.");
+        }
+
+        // PARAMETERIZED CONSTRUCTOR
+        public Student(string firstName,string lastName,int age)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+        }
+
+        public Student(
+            string firstName, 
+            string lastName, 
+            int age, 
+            DateTime dOB, 
+            string identityNo = null)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+            DOB = dOB;
+            IdentityNo = identityNo;
+        }
+
+
+        #endregion
+
     }
 }

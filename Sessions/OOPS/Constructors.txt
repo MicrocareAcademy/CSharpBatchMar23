@@ -1,0 +1,9 @@
+﻿using CSharpBatchMar23;
+
+Student student1 = new Student(); // parameterless constructor
+//student1.FirstName = "Sajjad";
+
+
+Student student2 = new Student("Sajjad", "Khan", 34);
+
+Student student3 = new Student("Sajjad", "Khan", 34,DateTime.Now);
