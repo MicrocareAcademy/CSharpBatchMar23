@@ -8,12 +8,14 @@ namespace CSharpBatchMar23
 {
     public static class MyCalculator
     {
-        static public int Add(int num1,int num2)
+        public static string Operation; // static field
+
+        public static int Add(int num1,int num2) // static method
         {
             return num1 + num2;
         }
 
-        static public int Add(int num1, int num2,int num3)
+        public static int Add(int num1, int num2,int num3)
         {
             return num1 + num2 + num3;
         }

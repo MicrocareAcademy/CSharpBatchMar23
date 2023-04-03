@@ -1,0 +1,29 @@
+﻿
+using CSharpBatchMar23;
+
+//Staic method can be call by using class
+// Static method can access only static members(fields/properties/method)
+TataMotor.DisplayCompanyDetails(); 
+
+TataMotor tataIndica = new TataMotor();
+tataIndica.Model = "Tata Indica 2022"; //Instance Variable, it can be access through object
+tataIndica.Color = "Gray";
+tataIndica.DisplayModelDetails(); // Non Static Method
+
+TataMotor tataNexon = new TataMotor();
+tataNexon.Model = "Tata Nexon 2023";
+tataNexon.Color = "Black";
+tataNexon.DisplayModelDetails();
+
+TataMotor tataVista = new TataMotor
+{
+    Color = "White",
+    Model = "Tata Vista 2010",
+    IsAutomatic = true,
+    Price = 200000
+};
+tataVista.DisplayModelDetails();
+
+
+
+

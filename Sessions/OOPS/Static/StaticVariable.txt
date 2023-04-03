@@ -1,0 +1,42 @@
+﻿
+
+// Static 
+
+// Static Class : 
+// Once we declare the class as Static, then we cannot able to create an object
+
+// Static Field / Property: 
+// we can make field or property as STATIC, by using keyword Static
+// public static string Founder{get;set;}
+
+
+// TATAMOTORS
+
+using CSharpBatchMar23;
+
+TataMotor tataIndica = new TataMotor();
+tataIndica.Model = "Tata Indica 2022"; //Instance Variable, it can be access through object
+tataIndica.Color = "Gray";
+
+// TataMotor.Founder : this is Static variable, can be access through class
+Console.WriteLine($"1. Model:{tataIndica.Model}, Founder: {TataMotor.Founder}");
+
+TataMotor tataNexon = new TataMotor();
+tataNexon.Model = "Tata Nexon 2023";
+tataNexon.Color = "Black";
+
+Console.WriteLine($"2. Model:{tataNexon.Model}, Founder: {TataMotor.Founder}");
+
+TataMotor tataVista = new TataMotor
+{
+    Color = "White",
+    Model = "Tata Vista 2010",
+    IsAutomatic = true,
+    Price = 200000
+};
+Console.WriteLine($"3. Model:{tataVista.Model}, Founder: {TataMotor.Founder}");
+
+
+
+
+
