@@ -7,8 +7,6 @@
 // Static class will contains only Static members 
 // you cannot have instance members inside static class
 
-// Static Method can access only Static Field or Property or Method 
-
 // Non-Static class can have Static members 
 // i can access static members by using ClassName
 // TataMotor.Founder // here Founder is the Static Field and TataMotor is a class
