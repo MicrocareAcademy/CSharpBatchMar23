@@ -8,14 +8,16 @@ namespace CSharpBatchMar23.Inheritance
 {
     public class Cat : Animal
     {
+        public Cat() { }
+
         public Cat(string name)
         {
             Name = name; //i can able to access Name Property, because Cat is derived Class
         }
 
-        public void GetName()
+        public override void Display()
         {
-            Console.WriteLine($"My cat name is {Name}");
+            Console.WriteLine($"I am a cat");
         }
     }
 }

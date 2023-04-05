@@ -11,11 +11,9 @@ namespace CSharpBatchMar23.Inheritance
         protected string Name { get; set; } 
         // can be accessed within the same class or from its derived classes
 
-        public void Display()
+        public virtual void Display()
         {
             Console.WriteLine("I am an Animal ...");
         }
     }
-
-
 }

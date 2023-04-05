@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace CSharpBatchMar23.Inheritance
 {
-    public class Dog : Animal
+    public class Dog : Animal // dog is a derived class and animal is a base class
     {
         public Dog(string name)
         {
-            Name = name;
+            Name = name;  // Name is protected property exist inside Base Class
+
+           // as its protected it can be accessed within the baseclass or from derived classes
         }
 
-        public void GetName()
+        public override void Display()
         {
-            Console.WriteLine($"My dog name is {Name}");
+            base.Display();
+
+            Console.WriteLine($"I am a dog");
         }
+        
     }
 }
