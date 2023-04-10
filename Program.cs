@@ -1,17 +1,16 @@
-﻿
-using CSharpBatchMar23.Inheritance;
+﻿using CSharpBatchMar23.Abstract;
+using CSharpBatchMar23.Sealed;
+
+// ABSTRACTION
+
+SportsBike sb = new SportsBike();
+sb.Brake();
+
+StreetBike st = new StreetBike();
+st.Brake();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// SEALED 
+Person p1 = new Person("Sajjad", "Khan");
+p1.DisplayName();
 
