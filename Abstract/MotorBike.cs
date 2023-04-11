@@ -8,7 +8,12 @@ namespace CSharpBatchMar23.Abstract
 {
     public abstract class MotorBike
     {
-        public abstract void Brake();
+        public abstract void Brake(); // by default virtual
+
+        public void DisplayModel() // non-Abstract Methods
+        {
+
+        }
     }
 
     public class SportsBike : MotorBike

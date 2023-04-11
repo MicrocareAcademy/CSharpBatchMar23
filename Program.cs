@@ -1,16 +1,23 @@
-﻿using CSharpBatchMar23.Abstract;
-using CSharpBatchMar23.Sealed;
+﻿
 
-// ABSTRACTION
+using CSharpBatchMar23.Interface;
+using CSharpBatchMar23.Interface.SMS;
 
-SportsBike sb = new SportsBike();
-sb.Brake();
-
-StreetBike st = new StreetBike();
-st.Brake();
+Rectangle rec = new Rectangle(10,20,"Green");
+rec.Area();
+rec.Color();
 
 
-// SEALED 
-Person p1 = new Person("Sajjad", "Khan");
-p1.DisplayName();
+Square sqr = new Square(40,"Orange");
+sqr.Area();
+sqr.Color();
+
+
+//ISMS sms = new JIOSmsProvider();
+//sms.SendSms("123123123", "Welcome to Microcare Academy", "Microcare");
+
+
+//ISMS airtelSMS = new AirtelSmsProvider();
+//airtelSMS.SendSms("123123123", "Welcome to Microcare Academy", "Microcare");
+
 
