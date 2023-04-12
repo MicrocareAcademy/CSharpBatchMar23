@@ -1,23 +1,20 @@
 ﻿
 
-using CSharpBatchMar23.Interface;
-using CSharpBatchMar23.Interface.SMS;
 
-Rectangle rec = new Rectangle(10,20,"Green");
-rec.Area();
-rec.Color();
+//using CSharpBatchMar23.Polymorphism;
 
+//Drawing drawing = new Square();
 
-Square sqr = new Square(40,"Orange");
-sqr.Area();
-sqr.Color();
+//drawing.Area();
 
 
-//ISMS sms = new JIOSmsProvider();
-//sms.SendSms("123123123", "Welcome to Microcare Academy", "Microcare");
+
+CSharpBatchMar23.Students.UserInfo studentUser = new CSharpBatchMar23.Students.UserInfo();
+studentUser.StudentUserName = "asdasd";
 
 
-//ISMS airtelSMS = new AirtelSmsProvider();
-//airtelSMS.SendSms("123123123", "Welcome to Microcare Academy", "Microcare");
+CSharpBatchMar23.UserInfo.UserInfo user = new CSharpBatchMar23.UserInfo.UserInfo();
+user.MobileNoUSA = "q123123";
+
 
 

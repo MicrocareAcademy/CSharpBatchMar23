@@ -12,6 +12,7 @@ namespace CSharpBatchMar23
 
         public static int Add(int num1,int num2) // static method
         {
+            // behaviour(code)
             return num1 + num2;
         }
 
