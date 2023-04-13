@@ -1,0 +1,14 @@
+﻿//using CSharpBatchMar23.Polymorphism;
+
+//Drawing drawing = new Square();
+
+//drawing.Area();
+
+
+
+CSharpBatchMar23.Students.UserInfo studentUser = new CSharpBatchMar23.Students.UserInfo();
+studentUser.StudentUserName = "asdasd";
+
+
+CSharpBatchMar23.UserInfo.UserInfo user = new CSharpBatchMar23.UserInfo.UserInfo();
+user.MobileNoUSA = "q123123";

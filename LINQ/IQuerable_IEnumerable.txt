@@ -1,0 +1,49 @@
+﻿
+// IENUMERABLE , its an interface which contains only one abstract method GetEnumerator
+//GetEnumerator() , it will iterate the collection in forward direction
+
+
+// IENUMERABLE<T> : IENUMERABLE
+// its a generic Collection, which is used to store data of similar data type, it cannot 
+// perform operations ,it will only move(iterate) in forward direction
+
+// ILIST<T> : IENUMERABLE<T>
+// its a generic collection, which is used to store data of similar data type, it can perform
+// operations like sort,insert,add,delete,removeAt and soon and also iterate the collection in
+// forward direction
+
+
+// IQueryable<T> : IENUMERABLE<T>
+
+
+// when we are fetching the data from database, we used to store the data in C# Collections
+// IList, IEnuemerable, IQuerable 
+
+
+// IEnumerable, it will store all the data inside MEMORY
+
+// Students data inside database , i have thousands of records
+
+// i want to get students for the year 2023, inside my database i have 100 students for the year 2023
+
+// IENUMERABLE
+/*
+  IEnumerable<Employee> list = dc.Employees.Where(p => p.JoiningYear == 2023);
+
+  list = list.Take<Employee>(10); 
+
+  //it will fetch(load) all the employees who join the year 2023
+  // after loading all the employee data into memory and then performing the operation(filtering),
+  // to get only 10 employees
+ */
+
+
+// IQUERABLE
+/*
+
+   IQuerable<Employee> list = dc.Employees.Where(p => p.JoiningYear == 2023);
+
+   list = list.Take<Employee>(10); 
+
+   // it will fetch 10 employees who joined in the year 2023
+ */
