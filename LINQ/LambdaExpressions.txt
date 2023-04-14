@@ -1,0 +1,29 @@
+﻿
+/*
+ count => count + 2;
+sum => sum + 2;
+n => n % 2 == 0
+
+ */
+
+// EXAMPLE 1
+List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6 };
+
+List<int> evenNumbers = numbers
+     .Where(p => p % 2 == 0) // Lambda Expression
+     .ToList();
+
+foreach (var num in evenNumbers)
+{
+    Console.Write("{0} ", num);
+}
+
+Console.WriteLine();
+
+
+// FIND ALL
+List<int> findAllNumbers = numbers
+                           .FindAll(p => p % 2 == 0)
+                           .ToList();
+
+

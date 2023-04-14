@@ -1,0 +1,81 @@
+﻿
+using CSharpBatchMar23.LINQ;
+
+IList<int> ages = new List<int>();
+ages.Add(10);
+
+IList<int> userIds = new List<int>()
+                                { 1, 2, 3, 4, 5, 6 };
+
+
+foreach (var age in ages)
+{
+
+}
+
+
+//IList<Person> persons = new List<Person>();
+
+//var p1 = new Person(1, "Sajjad", 34, "123-123-1231", "Kurnool");
+//persons.Add(p1);
+
+//var p2 = new Person(1, "Srikant", 25, "10023-00-1231", "Kurnool");
+//persons.Add(p2);
+
+//var p3 = new Person(1, "Praveen", 24, "741-741-741", "Kurnool");
+//persons.Add(p3);
+
+IList<Person> persons = new List<Person>()
+{
+    new Person(1, "Sajjad", 34, "123-123-1231", "Kurnool"),
+    new Person(2, "Srikant", 25, "10023-00-1231", "Nandyal"),
+    new Person(3, "Praveen", 24, "741-741-741", "Atmakur"),
+    new Person(4, "Sushma", 24, "741-525-741", "Atmakur")
+};
+
+persons.Add(new Person(5, "Hammad", 26, "8888-741-741", "Hyderabad"));
+persons.Add(new Person(5, "Sreenivasulu", 26, "999-741-741", "Kurnool"));
+persons.Add(new Person(6, "Kalyani", 26, "9999-741-741", "Bangalore"));
+
+/*
+from [identifier] 
+in [source collection]
+where [boolean expression]
+order by [expression(ascending/descending)]
+select [expression]
+
+
+ */
+
+// #### QUERY EXPRESSION ######
+
+IEnumerable<Person> filteredData = (from p
+                                    in persons
+                                    //let fileId = "#" + p.Id
+                                    where p.City == "Kurnool"
+                                    orderby p.Name ascending
+                                    select p);
+
+IList<Person> filteredDatas = (from pp
+                               in persons
+                               where pp.City == "Kurnool"
+                               orderby pp.Name ascending
+                               select pp).ToList();
+
+
+// ### Method Invocation / Expression
+
+/*
+ [source collection]
+ .Where [boolean expression]
+ .OrderBy [expression(ascending/descending)]
+ .Select [expression]
+ */
+
+var enumerablePersons = persons.Where(p => p.City == "Kurnool"); // => Lambda Expression
+
+var listOfPersons = persons.Where(p => p.City == "Kurnool").ToList();
+
+
+
+
