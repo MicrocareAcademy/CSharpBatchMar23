@@ -1,53 +1,59 @@
 ﻿using CSharpBatchMar23.LINQ;
-using System.Xml.Linq;
-
-IList<Person> persons = new List<Person>()
-{
-    new Person(1, "Sajjad", 34, "123-123-1231", "Kurnool"),
-    new Person(2, "Srikant", 25, "10023-00-1231", "Nandyal"),
-    new Person(3, "Praveen", 24, "741-741-741", "Atmakur"),
-    new Person(4, "Sushma", 24, "741-525-741", "Atmakur")
-};
-
-persons.Add(new Person(5, "Hammad", 26, "8888-741-741", "Hyderabad"));
-persons.Add(new Person(5, "Sreenivasulu", 26, "999-741-741", "Kurnool"));
-persons.Add(new Person(6, "Kalyani", 26, "9999-741-741", "Bangalore"));
-
-//var firstPersonOfKnl = persons.Where(p => p.City == "Kurnool").First();
-
-////var firstPersonOfKnl = persons.Where(p => p.City == "Newyork").FirstOrDefault();
 
 
-//Console.WriteLine("First Person Of KNL");
-//Console.WriteLine($"Name: {firstPersonOfKnl.Name} / ID: {firstPersonOfKnl.Id} / Mobile No: {firstPersonOfKnl.MobileNo}");
+//IList<Person> persons = null;
 
-//var lastPersonOfKnl = persons.Where(p => p.City == "Kurnool").Last();
-//Console.WriteLine("Last Person Of KNL");
-//Console.WriteLine($"Name: {lastPersonOfKnl.Name} / ID: {lastPersonOfKnl.Id} / Mobile No: {lastPersonOfKnl.MobileNo}");
+//persons.Add(new Person(1, "Sajjad", 40, "123-123-123-1", "Kurnool"));
 
-
-// I want to get only Names from the collection
-
-//var names = (from p in persons
-//             where p.City == "Kurnool"
-//             select p.Name);
-
-
-//var names2 = persons.Select(person => person.Name).ToList();
-
-//foreach(var name in names2)
+//try
 //{
-//    Console.WriteLine(name);
+//    int x = 10;
+//    int y = 20;
+//    int z = x + y;
+
+//    Console.WriteLine("try block executed");
+
+//    IList<Person> persons = null;
+
+//    persons.Add(new Person(1, "Sajjad", 40, "123-123-123-1", "Kurnool"));
+
+
+//    foreach(var person in persons)
+//    {
+//        Console.WriteLine($"Person Details: {person.Name} , Age: {person.Age}");
+//    }
+
+//}
+//catch(Exception ex)
+//{
+//    Console.WriteLine($"Error Message:{ex.Message}");
+//    Console.WriteLine($"Error Source:{ex.Source}");
+//    Console.WriteLine($"Error Stack:{ex.StackTrace}");
+//}
+//finally
+//{
+//    Console.WriteLine("finally block executed");
 //}
 
 
-
-var personsWithBasicData = persons.Select(x => new 
-                                                    { PersonID = x.Id,
-                                                      PersonName = x.Name });
-
-foreach(var person in personsWithBasicData)
+try
 {
-    Console.WriteLine($"PersonID : {person.PersonID} , Name: {person.PersonName}");
-}
+    IList<Person> persons = new List<Person>();
 
+    persons.Add(new Person(1, "Sajjad", 40, "123-123-123-1", "Kurnool"));
+
+    int i = 20;
+    int result = i / 0;    // Suspect code  
+}
+catch (DivideByZeroException ex)
+{
+    Console.WriteLine("Attempted divide by zero");
+}
+catch (NullReferenceException ex)
+{
+    Console.WriteLine("Nullable Exception, try to do operation on nullables");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Error Message:{ex.Message}");
+}

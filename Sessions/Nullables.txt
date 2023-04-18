@@ -1,0 +1,58 @@
+﻿
+
+
+
+
+
+//bool? isactive = null;
+
+//bool? isBlocked = false;
+
+
+//int? val1 = 4;
+//int? val2 = null;
+//bool? val3 = true;
+//bool? val4 = null;
+//char? val5 = 'a';
+//char? val6 = null;
+
+//Console.WriteLine("Value of val1: {0}", val1);
+//Console.WriteLine("Value of val2: {0}", val2);
+//Console.WriteLine("Value of val3: {0}", val3);
+//Console.WriteLine("Value of val4: {0}", val4);
+//Console.WriteLine("Value of val5: {0}", val5);
+//Console.WriteLine("Value of val6: {0}", val6);
+
+
+//string myIdentityNo = null;
+
+//string myFatherIdentityNo = "9636-8525-74211";
+
+//string identityNo = myIdentityNo ?? myFatherIdentityNo;
+
+//Console.WriteLine($"Identity No: {identityNo}");
+
+
+//bool? isUserExist = null;
+
+//bool? isUserBlocked = true;
+
+
+//bool? userActive = isUserExist ?? isUserBlocked;
+
+//Console.WriteLine(userActive);
+
+
+
+using CSharpBatchMar23.LINQ;
+
+IList<Person> persons = null;
+
+persons.Add(new Person(1, "Sajjad", 40, "123-123-123-1", "Kurnool"));
+
+
+Person p1 = null;
+
+Console.WriteLine($"Person Age: {p1.Age}");
+
+
